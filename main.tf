@@ -1,8 +1,8 @@
 provider "heroku" {}
 
 resource "heroku_app" "example" {
-  name   = "learn-terraform-heroku"
-  region = "us"
+  name   = "learn-terraform"
+  region = "eu"
 }
 
 resource "heroku_addon" "postgres" {
