@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', function (_, res) {
-  res.send('Hello World\n')
+  res.send('Hello Terraform!\n')
 });
 
 app.get('/db', async (_, res) => {
