@@ -28,6 +28,6 @@ resource "heroku_formation" "example" {
   app        = heroku_app.example.id
   type       = "web"
   quantity   = var.app_quantity
-  size       = "Standard-1x"
+  size       = "free"
   depends_on = [heroku_build.example]
 }
