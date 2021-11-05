@@ -16,6 +16,10 @@ resource "heroku_build" "example" {
   source {
     path = "./app"
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 variable "app_quantity" {
